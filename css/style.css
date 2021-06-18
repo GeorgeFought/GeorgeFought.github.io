@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+* {
+    font: 400 14px 'Staatliches';
+}
+body {
+    background-color: #5daa68;
+}
+aside {
+}
+footer {
+    border-top: 1px solid #3f6844;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+h1 {
+    color: #3f6844;
+    font-size: 3rem;
+    text-align: center;
+}
+header {
+    border-bottom: 1px solid #3f6844;
+    text-align: center;
+}
+main {
+}
+.container nav {
+    background-color: #faf1cf;
+    border-radius: 5px;
+    border: 1px solid #3f6844;
+    display: flex;
+    justify-content: center;
+}
+    nav a {
+        color: #3f6844;
+        font-weight: 700;
+        text-decoration: none;
+    }
+ol,
+.container ul {
+    list-style-type: none;
+    display: flex;
+}
+small {
+    font-size: .8rem;
+}
+
+.btn {
+    background-color: #5daa68;
+    border: none;
+    border-radius: 5px;
+    color: #3f6844;
+}
+.cards{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    background-color: #faf1cf;
+    border-radius: 11px;
+    border: 1px solid #3f6844;
+    text-align: center;
+}
+    .card large {
+        font-size: 2rem;
+    }
+    .card a {
+        color: #3f6844;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .card h2,
+    .card h3 {
+        color: #3f6844;
+        font-size: 1.25rem;
+    }
+.logo {
+    color: #3f6844;
+    font-size: 24px;
+    text-decoration: none;
+}
