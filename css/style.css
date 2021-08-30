@@ -1,15 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
+@font-face{
+    font-family: "HyperViperLaserItalicized";
+    src: url("hyperviperlaserital.ttf") format("truetype");
+  }
+
+@font-face{
+    font-family: "HyperViperLeft";
+    src: url("hyperviperleft.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "HyperViperLaserGradient";
+    src: url("hypervipergradital.ttf") format("truetype");
+  }
+
 * {
-    font: 400 14px 'Staatliches';
+    font: 400 14px 'HyperViperLeft';
 }
 body {
-    background-color: #5daa68;
+    background-image: url("/images/vaporwave-city-delorean.jpg");
+    background-repeat: no-repeat;
 }
 aside {
 }
 footer {
-    border-top: 1px solid #3f6844;
+
     text-align: center;
 }
 
@@ -21,17 +37,14 @@ h1 {
     color: #3f6844;
     font-size: 3rem;
     text-align: center;
+    font: 400 14px 'HyperViperLaserGradient';
 }
 header {
-    border-bottom: 1px solid #3f6844;
     text-align: center;
 }
 main {
 }
 .container nav {
-    background-color: #faf1cf;
-    border-radius: 5px;
-    border: 1px solid #3f6844;
     display: flex;
     justify-content: center;
 }
@@ -68,10 +81,17 @@ small {
     display: flex;
     flex-direction: column;
 }
+
+.bio-pic img{
+        transform: scale(95%);
+        border-radius: 100%;
+        /* cursor: pointer;
+        transition: 500ms; */
+}
 .card {
-    background-color: #faf1cf;
-    border-radius: 11px;
-    border: 1px solid #3f6844;
+    /* background-color: #faf1cf; */
+    /* border-radius: 11px; */
+    /* border: 1px solid #3f6844; */
     text-align: center;
 }
     .card large {
@@ -91,7 +111,6 @@ small {
         color: #3f6844;
     }
 .logo {
-    color: #3f6844;
-    font-size: 24px;
-    text-decoration: none;
+    color: #D40078;
+    font: 400 4rem "HyperViperLaserGradient";
 }
