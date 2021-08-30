@@ -1,0 +1,157 @@
+.parallax-one,
+.parallax-two,
+.parallax-three {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-one {
+  background-image: url("/images/desertIsland.png");
+  position: relative;
+}
+
+.parallax-two {
+  background-image: url("/images/ConsoleMaker.png");
+}
+
+.parallax-three {
+    background-image: url("/images/TomaGOATchi.png");
+}
+
+html,
+body,
+.container {
+  /*important*/
+  height: 100%;
+  /* background-color: black; */
+}
+
+body {
+  background-color: #5daa68;
+  margin: 0;
+}
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article img {
+  height: 300px;
+  width: 500px;
+  border-radius: 20px;
+  margin: auto;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.article img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.text-over-parallax {
+  color: #3f6844;
+  margin: 0;
+  padding: 10px;
+  font-size: 60px;
+  text-align: center;
+  background-color: #faf1cf;
+  border-radius: 5px;
+border: 1px solid #3f6844;
+}
+
+.topic1,
+.topic2 {
+  height: 500px;
+  background-color: #5daa68;
+  font-size: 36px;
+}
+
+.topic3 {
+  /* height: 500px; */
+  background-color: #5daa68;
+  font-size: 36px;
+}
+
+.article-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  background-color: #3f6844;
+}
+
+.article {
+  margin: 2%;
+  margin-top: 5%;
+}
+p {
+  color: #fff;
+  margin: 0%;
+  text-decoration: none;
+  text-align: center;
+}
+.articleTitle {
+  max-width: 550px;
+  text-align: center;
+}
+
+/* Single Article Content */
+
+.main-content {
+  background-color: #e0e4cc;
+}
+
+.single-article-title {
+  display: block;
+  font-family: "Georama", sans-serif;
+  font-size: 40px;
+  margin-left: 400px;
+  margin-right: 400px;
+  text-align: center;
+}
+
+.single-article-author {
+  font-family: "Georama", sans-serif;
+  font-size: 17px;
+  margin-left: 700px;
+  margin-right: 700px;
+  text-align: center;
+}
+
+.single-article-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-style: solid;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+#colored-rectangle{
+  margin: 2%;
+  height: 10px;
+  width: 500px;
+  background-image: linear-gradient(to right, rgb(250, 116, 26), rgb(128,176,85), black);  
+}
+
+.single-article-content {
+  display: block;
+  margin-left: 15em;
+  margin-right: 15em;
+  font-family: "Georama", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+  color: black;
+}
