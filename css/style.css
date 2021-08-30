@@ -1,32 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-@font-face{
+@font-face {
     font-family: "HyperViperLaserItalicized";
     src: url("hyperviperlaserital.ttf") format("truetype");
-  }
+}
 
-@font-face{
+@font-face {
     font-family: "HyperViperLeft";
     src: url("hyperviperleft.ttf") format("truetype");
 }
 
-@font-face{
+@font-face {
     font-family: "HyperViperLaserGradient";
     src: url("hypervipergradital.ttf") format("truetype");
-  }
-
-* {
-    font: 400 14px 'HyperViperLeft';
 }
+
+@font-face {
+    font-family: "Typewriter";
+    src: url("TeletypeRetro-K7JGe.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Outrun";
+    src: url("Outrunfuture.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Arcade";
+    src: url("ArcadeRounded-3DM.ttf") format("truetype");
+}
+
+/* * {
+    font: 400 14px 'HyperViperLeft';
+} */
+
 body {
     background-image: url("/images/vaporwave-city-delorean.jpg");
-    background-repeat: no-repeat;
 }
-aside {
-}
-footer {
 
+aside {}
+
+footer {
     text-align: center;
+    font: 400 25px "Outrun";
 }
 
 nav {
@@ -39,25 +55,30 @@ h1 {
     text-align: center;
     font: 400 14px 'HyperViperLaserGradient';
 }
+
 header {
     text-align: center;
 }
-main {
-}
+
+main {}
+
 .container nav {
     display: flex;
     justify-content: center;
 }
-    nav a {
-        color: #3f6844;
-        font-weight: 700;
-        text-decoration: none;
-    }
+
+nav a {
+    color: #3f6844;
+    font-weight: 700;
+    text-decoration: none;
+}
+
 ol,
 .container ul {
     list-style-type: none;
     display: flex;
 }
+
 small {
     font-size: .8rem;
 }
@@ -68,48 +89,62 @@ small {
     border-radius: 5px;
     color: #3f6844;
 }
-.cards{
+
+.cards {
     display: flex;
     justify-content: center;
 }
-.cards2{
-    display: flex; 
+
+.cards2 {
+    display: flex;
     justify-content: center;
     padding: 15%;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
 }
 
-.bio-pic img{
-        transform: scale(95%);
-        border-radius: 100%;
-        /* cursor: pointer;
+.bio-pic img {
+    transform: scale(95%);
+    border-radius: 100%;
+    /* cursor: pointer;
         transition: 500ms; */
 }
+
 .card {
-    /* background-color: #faf1cf; */
-    /* border-radius: 11px; */
-    /* border: 1px solid #3f6844; */
+    /* background: rgba(0, 0, 0, 0.5); */
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: 1px solid #920075;
     text-align: center;
 }
-    .card large {
-        font-size: 2rem;
-    }
-    .card a {
-        color: #3f6844;
-        font-weight: 700;
-        text-decoration: none;
-    }
-    .card h2,
-    .card h3 {
-        color: #3f6844;
-        font-size: 1.25rem;
-    }
-    .card p{
-        color: #3f6844;
-    }
+
+.card large {
+    font-size: 2rem;
+}
+
+.card a {
+    color: #3f6844;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.card h2,
+.card h3 {
+    color: #3f6844;
+    font-size: 1.25rem;
+}
+
+.card p {
+    /* color: #F706CF; */
+    color: #FF3864;
+    font: 400 1rem "Arcade";
+}
+
 .logo {
     color: #D40078;
     font: 400 4rem "HyperViperLaserGradient";
