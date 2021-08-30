@@ -56,6 +56,10 @@ small {
     color: #3f6844;
 }
 .cards{
+    display: flex;
+    justify-content: center;
+}
+.cards2{
     display: flex; 
     justify-content: center;
     padding: 15%;
