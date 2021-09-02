@@ -135,8 +135,9 @@ small {
 
 .card h2,
 .card h3 {
-    color: #3f6844;
-    font-size: 1.25rem;
+    /* color: #3f6844; */
+    color: #D40078;
+    font: 400 3rem "HyperViperLaserGradient";
 }
 
 .card p {
