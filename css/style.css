@@ -68,7 +68,8 @@ main {}
 }
 
 nav a {
-    color: #D40078;
+    /* color: #D40078; */
+    color: #2DE2E6;
     font-weight: 200;
     text-decoration: none;
 }
@@ -85,13 +86,16 @@ small {
 
 .btn,
 .modal-button {
-    background-color: rgba(0, 0, 0, 0.8);
-    border: none;
-    border-radius: 5px;
+    display:flex;
+    
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: 1px solid #920075;
     padding: 16px;
     font-family: HyperViperLeft;
     font-size: 20px;
-    border: none;
     cursor: pointer;
 }
 
@@ -119,12 +123,9 @@ small {
 .bio-pic img {
     transform: scale(95%);
     border-radius: 100%;
-    /* cursor: pointer;
-        transition: 500ms; */
 }
 
 .card {
-    /* background: rgba(0, 0, 0, 0.5); */
     background: rgba(0, 0, 0, 0.8);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
@@ -138,7 +139,8 @@ small {
 }
 
 .card a {
-    color: #D40078;
+    /* color: #D40078; */
+    color: #2DE2E6;
     font-weight: 200;
     text-decoration: none;
 }
@@ -163,26 +165,6 @@ small {
 
 /* Modal */
 
-/* .aboutme-modal {
-    float: right;
-    position: relative;
-    display: inline-block;
-  } */
-
-  /* .modal-button {
-    background-color: #7f6dd2;
-    color: #d3dcde;
-    padding: 16px;
-    font-family: SNES;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-  } */
-
-  /* .modal-button:hover {
-    background-color: #aba5e9;
-  } */
-
   .about-modal {
     display: none;
     position: fixed;
@@ -202,10 +184,14 @@ small {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
     color:#35266a;
     font-family: SNES;
     font-size: 30px;
+  }
+
+  .modal-image {
+    width: 55%;
   }
   
   .modal-close {
