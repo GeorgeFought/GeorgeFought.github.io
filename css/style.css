@@ -36,7 +36,7 @@
 
 body {
     background-image: url("/images/vaporwave-city-delorean.jpg");
-    background-repeat:round
+    background-repeat: round;
 }
 
 aside {}
@@ -86,9 +86,8 @@ small {
 }
 
 .btn,
-.modal-button {
-    display:flex;
-    
+.modal-button,
+.inspiration-dropbtn {
     background-color: rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
@@ -116,6 +115,12 @@ small {
     padding: 15%;
 }
 
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    max-width: 42%;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -133,6 +138,10 @@ small {
     border-radius: 10px;
     border: 1px solid #920075;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .card1 {
@@ -214,3 +223,49 @@ small {
     text-decoration: none;
     cursor: pointer;
   }
+
+  /* Inspiration */
+
+  /* .inspiration-dropbtn {
+    color: #2DE2E6;
+    padding: 16px;
+    font-family: HyperViperLeft;
+    font-size: 20px;
+    cursor: pointer;
+  } */
+  
+  .inspiration-dropbtn:hover {
+    background-color: #aba5e9;
+  }
+  
+  .inspiration-dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .inspiration-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    font-family: Arcade;
+    overflow: auto;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: 1px solid #920075;
+  }
+  
+  .inspiration-dropdown-content a {
+    color: #FF3864;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .inspiration-dropdown a:hover {background-color: #aba5e9;}
+  
+  .inspiration-show {display: block;}

@@ -61,19 +61,31 @@
                 </article>
                 <article class="card">
                     <h3>Contact Me</h3>
-                    <div class="aboutme-modal">
-                        <button id="modalBtn" class="modal-button"><a>Resume</a></button>
-                        <div id="aboutModal" class="about-modal">
-                            <div class="modal-content">
-                                <span class="modal-close">&times;</span>
-                                <img class="modal-image" src="/images/Resume-9-3-21.png"> 
+                    <div class="contact-links">
+                        <div class="aboutme-modal">
+                            <button id="modalBtn" class="btn"><a>Resume</a></button>
+                            <div id="aboutModal" class="about-modal">
+                                <div class="modal-content">
+                                    <span class="modal-close">&times;</span>
+                                    <img class="modal-image" src="/images/Resume-9-3-21.png">
+                                </div>
                             </div>
                         </div>
+                        <div class="inspiration-dropdown">
+                            <button onclick="inspirationFunction()" class="inspiration-dropbtn"><a>Sources</a></button>
+                            <div id="inspirationDropdown" class="inspiration-dropdown-content">
+                                <a href="https://wallpaperaccess.com/80s-vaporwave" target="_blank">Background Images</a>
+                                <a href="https://www.dafont.com/outrun-future.font" target="_blank">Outrun Footer Font</a>
+                                <a href="https://www.fontspace.com/arcade-normal-font-f871" target="_blank">Arcade Body Font</a>
+                                <a href="https://www.dafont.com/hyper-vyper.font"target="_blank">Hyper Vyper Heading Font</a>
+                            </div>
+                        </div>
+                        <button class="btn"><a href="https://github.com/GeorgeFought"
+                                target="_blank">GitHub</a></button>
+                        <button class="btn"><a href="https://www.linkedin.com/in/georgefought/"
+                                target="_blank">LinkedIn</a></button>
+                        <button class="btn"><a href="mailto:george.fought@gmail.com" target="_blank">Email</a></button>
                     </div>
-                    <button class="btn"><a href="https://github.com/GeorgeFought" target="_blank">GitHub</a></button>
-                    <button class="btn"><a href="https://www.linkedin.com/in/georgefought/"
-                            target="_blank">LinkedIn</a></button>
-                    <button class="btn"><a href="mailto:george.fought@gmail.com" target="_blank">Email</a></button>
                 </article>
             </div>
         </aside>
@@ -82,6 +94,7 @@
         </footer>
     </div>
     <script src="./js/about-modal.js"></script>
+    <script src="./js/inspiration-dropdown.js"></script>
 </body>
 
 </html>
