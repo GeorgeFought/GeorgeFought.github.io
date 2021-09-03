@@ -36,6 +36,7 @@
 
 body {
     background-image: url("/images/vaporwave-city-delorean.jpg");
+    background-repeat:round
 }
 
 aside {}
