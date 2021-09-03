@@ -134,6 +134,10 @@ small {
     text-align: center;
 }
 
+.card1 {
+    width: 60%;
+}
+
 .card large {
     font-size: 2rem;
 }
