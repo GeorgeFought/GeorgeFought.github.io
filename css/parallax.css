@@ -10,15 +10,18 @@
 
 .parallax-one {
   background-image: url("/images/desertIsland.png");
+  border-radius: 5px;
   position: relative;
 }
 
 .parallax-two {
   background-image: url("/images/ConsoleMaker.png");
+  border-radius: 5px;
 }
 
 .parallax-three {
     background-image: url("/images/TomaGOATchi.png");
+    border-radius: 5px;
 }
 
 html,
@@ -26,20 +29,11 @@ body,
 .container {
   /*important*/
   height: 100%;
-  /* background-color: black; */
 }
 
 body {
-  background-color: #5daa68;
+  background-color: #791E94;
   margin: 0;
-}
-
-.parallax {
-  height: 100vh;
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .article img {
@@ -52,32 +46,34 @@ body {
 }
 
 .article img:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
   cursor: pointer;
 }
 
 .text-over-parallax {
-  color: #3f6844;
+  /* color: #D40078; */
+  color: #2DE2E6;
   margin: 0;
   padding: 10px;
-  font-size: 60px;
   text-align: center;
-  background-color: #faf1cf;
-  border-radius: 5px;
-border: 1px solid #3f6844;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  border: 1px solid #920075;
 }
 
 .topic1,
 .topic2 {
   height: 500px;
-  background-color: #5daa68;
-  font-size: 36px;
+  /* background-image: url(/images/vaporwave-city-delorean.jpg); */
+  font-size: 2rem;
 }
 
 .topic3 {
   /* height: 500px; */
-  background-color: #5daa68;
-  font-size: 36px;
+  /* background-color: #5daa68; */
+  font-size: 2rem;
 }
 
 .article-flex {
@@ -85,18 +81,23 @@ border: 1px solid #3f6844;
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  background-color: #3f6844;
+  /* background-color: #3f6844; */
 }
 
 .article {
   margin: 2%;
   margin-top: 5%;
 }
-p {
-  color: #fff;
+h5 {
+  color: #2DE2E6;
+  font: 200 1.5rem HyperViperLeft;
   margin: 0%;
-  text-decoration: none;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  border: 1px solid #920075;
 }
 .articleTitle {
   max-width: 550px;
@@ -155,3 +156,4 @@ p {
   line-height: 35px;
   color: black;
 }
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,11 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <div class="container">
         <header>
-            <a class="logo" href="#">George Fought</a>
+            <a class="logo">George Fought</a>
             <nav>
                 <ul class="links">
                     <li><button class="btn"><a href="index.html">About Me</a></button></li>
@@ -21,40 +23,78 @@
             </nav>
         </header>
         <main>
-            <h1>About Me</h1>
             <div class="cards">
-                <article class="card">
-                    <h2>My Biography</h2>
-                    <img src="images\profile-pic.jpg" alt="Picture of George Fought">
+                <article class="card card1">
+                    <h2>About Me</h2>
+                    <div class="bio-pic">
+                        <img src="images\profile-pic.jpg" alt="Picture of George Fought">
+                    </div>
                     <p>Full-Stack Java Software Developer</p>
-                    <p>I started in the restuarant industry when I was sixteen and found that I really loved helping others solve the mystery of what's for dinner. </p>
-                    <p>I quickly realized that I loved to be in a postion to lead others and could communicate effectively to get the best of everyone.  </p>
-                    <p>This led me up the management career path through various roles over the years. </p>
-                    <p>After many years of that experience I realized that I didn't like the work/life balance of the service industry. The people and work itself </p>
-                    <p>were always great, but I didn't like not being at home with family and being stuck at work every weekend.</p>
-                    <p>In high school I had taken a few java courses and really loved programming in them.  I've always had a natural intuitiveness with computers since I was young.</p>
-                    <p>By expanding my knowledge of this useful skill I know that I can start a new career path that will allow me to have that work/life balance that I've dreamed of.</p>
+                    <p>I started in the restuarant industry when I was 16 and found that I really loved helping
+                        others solve the mystery of what's for dinner.
+                        I quickly realized that I loved to be in a postion to lead others and could communicate
+                        effectively to get the best of everyone.
+                        This led me up the management career path through various roles over the years.
+                        After many years of that experience I realized that I didn't like the work/life balance of the
+                        service industry. The people and work itself
+                        were always great, but I didn't like not being at home with family and being stuck at work every
+                        weekend.
+                        In high school I had taken a few java courses and really loved programming in them. I've always
+                        had a natural intuitiveness with computers since I was young.
+                        By expanding my knowledge of this useful skill I know that I can start a new career path that
+                        will allow me to have that work/life balance that I've dreamed of.</p>
                 </article>
             </div>
         </main>
         <aside>
             <div class="cards">
-            <article class="card">
-                <h3>My Skills</h3>
-                <p>• Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML • CSS • Flexbox • Grid • TDD • Agile (Scrum) • Object Oriented Programming (OOP)</p>
-                <p>• AJAX • JSON • RESTful APIs • Responsive Design / Mobile • Structured Query Language (SQL) • Relational Databases • Source Control/Git </p>
-            </article>
-            <article class="card">
-                <h3>Contact Me</h3>
-                <button class="btn"><a href="https://github.com/GeorgeFought" target="_blank">GitHub</a></button>
-                <button class="btn"><a href="https://www.linkedin.com/in/georgefought/" target="_blank">LinkedIn</a></button>
-                <button class="btn"><a href="mailto:george.fought@gmail.com" target="_blank">Email</a></button>
-            </article>
+                <article class="card">
+                    <h3>My Skills</h3>
+                    <p>•Java •Spring •H2 DB •JPA</p>
+                    <p>•JavaScript •MVC •HTML •CSS</p>
+                    <p>•Flex •Grid •TDD •Agile</p>
+                    <p>•Object Oriented Programming (OOP)</p>
+                    <p>•AJAX •JSON •RESTful APIs </p>
+                    <p>•Responsive Design/Mobile </p>
+                    <p>•SQL •Relational DB </p>
+                    <p>•Source Control/Git •Bash</p>
+                </article>
+                <article class="card">
+                    <h3>Contact Me</h3>
+                    <div class="contact-links">
+                        <div class="aboutme-modal">
+                            <button id="modalBtn" class="btn"><a>Resume</a></button>
+                            <div id="aboutModal" class="about-modal">
+                                <div class="modal-content">
+                                    <span class="modal-close">&times;</span>
+                                    <img class="modal-image" src="/images/Resume-9-3-21.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inspiration-dropdown">
+                            <button onclick="inspirationFunction()" class="inspiration-dropbtn"><a>Sources</a></button>
+                            <div id="inspirationDropdown" class="inspiration-dropdown-content">
+                                <a href="https://wallpaperaccess.com/80s-vaporwave" target="_blank">Background Images</a>
+                                <a href="https://www.dafont.com/outrun-future.font" target="_blank">Outrun Footer Font</a>
+                                <a href="https://www.fontspace.com/arcade-normal-font-f871" target="_blank">Arcade Body Font</a>
+                                <a href="https://www.dafont.com/hyper-vyper.font"target="_blank">Hyper Vyper Heading Font</a>
+                            </div>
+                        </div>
+                        <button class="btn"><a href="https://github.com/GeorgeFought"
+                                target="_blank">GitHub</a></button>
+                        <button class="btn"><a href="https://www.linkedin.com/in/georgefought/"
+                                target="_blank">LinkedIn</a></button>
+                        <button class="btn"><a href="mailto:george.fought@gmail.com" target="_blank">Email</a></button>
+                    </div>
+                </article>
             </div>
         </aside>
         <footer>
             <small>© 2021 George Fought</small>
         </footer>
     </div>
+    <script src="./js/about-modal.js"></script>
+    <script src="./js/inspiration-dropdown.js"></script>
 </body>
+
 </html>

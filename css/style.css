@@ -1,16 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-* {
-    font: 400 14px 'Staatliches';
+@font-face {
+    font-family: "HyperViperLaserItalicized";
+    src: url("hyperviperlaserital.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: "HyperViperLeft";
+    src: url("hyperviperleft.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "HyperViperLaserGradient";
+    src: url("hypervipergradital.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Typewriter";
+    src: url("TeletypeRetro-K7JGe.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Outrun";
+    src: url("Outrunfuture.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Arcade";
+    src: url("ArcadeRounded-3DM.ttf") format("truetype");
+}
+
+/* * {
+    font: 400 14px 'HyperViperLeft';
+} */
+
 body {
-    background-color: #5daa68;
+    background-image: url("/images/vaporwave-city-delorean.jpg");
+    background-repeat: round;
 }
-aside {
-}
+
+aside {}
+
 footer {
-    border-top: 1px solid #3f6844;
     text-align: center;
+    font: 400 25px "Outrun";
+    color: #2DE2E6;
 }
 
 nav {
@@ -18,80 +52,220 @@ nav {
 }
 
 h1 {
-    color: #3f6844;
-    font-size: 3rem;
+    color: #2DE2E6;
     text-align: center;
+    font: 400 3rem 'HyperViperLaserGradient';
 }
+
 header {
-    border-bottom: 1px solid #3f6844;
     text-align: center;
 }
-main {
-}
+
+main {}
+
 .container nav {
-    background-color: #faf1cf;
-    border-radius: 5px;
-    border: 1px solid #3f6844;
     display: flex;
     justify-content: center;
 }
-    nav a {
-        color: #3f6844;
-        font-weight: 700;
-        text-decoration: none;
-    }
+
+nav a {
+    /* color: #D40078; */
+    color: #2DE2E6;
+    font-weight: 200;
+    text-decoration: none;
+}
+
 ol,
 .container ul {
     list-style-type: none;
     display: flex;
 }
+
 small {
     font-size: .8rem;
 }
 
-.btn {
-    background-color: #5daa68;
-    border: none;
-    border-radius: 5px;
-    color: #3f6844;
+.btn,
+.modal-button,
+.inspiration-dropbtn {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: 1px solid #920075;
+    padding: 16px;
+    font-family: HyperViperLeft;
+    font-size: 20px;
+    cursor: pointer;
 }
-.cards{
+
+.btn:hover,
+.modal-button:hover {
+    background-color: #aba5e9;
+  }
+
+.cards {
     display: flex;
     justify-content: center;
 }
-.cards2{
-    display: flex; 
+
+.cards2 {
+    display: flex;
     justify-content: center;
     padding: 15%;
 }
-.container{
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    max-width: 42%;
+}
+
+.container {
     display: flex;
     flex-direction: column;
 }
-.card {
-    background-color: #faf1cf;
-    border-radius: 11px;
-    border: 1px solid #3f6844;
-    text-align: center;
+
+.bio-pic img {
+    transform: scale(95%);
+    border-radius: 100%;
 }
-    .card large {
-        font-size: 2rem;
-    }
-    .card a {
-        color: #3f6844;
-        font-weight: 700;
-        text-decoration: none;
-    }
-    .card h2,
-    .card h3 {
-        color: #3f6844;
-        font-size: 1.25rem;
-    }
-    .card p{
-        color: #3f6844;
-    }
-.logo {
-    color: #3f6844;
-    font-size: 24px;
+
+.card {
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: 1px solid #920075;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card1 {
+    width: 60%;
+}
+
+.card large {
+    font-size: 2rem;
+}
+
+.card a {
+    /* color: #D40078; */
+    color: #2DE2E6;
+    font-weight: 200;
     text-decoration: none;
 }
+
+.card h2,
+.card h3 {
+    /* color: #3f6844; */
+    color: #D40078;
+    font: 400 3rem "HyperViperLaserGradient";
+}
+
+.card p {
+    /* color: #F706CF; */
+    color: #FF3864;
+    font: 400 1rem "Arcade";
+}
+
+.logo {
+    color: #D40078;
+    font: 400 4rem "HyperViperLaserGradient";
+}
+
+/* Modal */
+
+  .about-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+   /* background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);  */
+  }
+  
+  .modal-content {
+    /* background-color: #d3dcde; */
+    margin: auto;
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 60%;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: 1px solid #920075;
+  }
+
+  .modal-image {
+    width: 55%;
+  }
+  
+  .modal-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .modal-close:hover,
+  .modal-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Inspiration */
+
+  /* .inspiration-dropbtn {
+    color: #2DE2E6;
+    padding: 16px;
+    font-family: HyperViperLeft;
+    font-size: 20px;
+    cursor: pointer;
+  } */
+  
+  .inspiration-dropbtn:hover {
+    background-color: #aba5e9;
+  }
+  
+  .inspiration-dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .inspiration-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    font-family: Arcade;
+    overflow: auto;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: 1px solid #920075;
+  }
+  
+  .inspiration-dropdown-content a {
+    color: #FF3864;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .inspiration-dropdown a:hover {background-color: #aba5e9;}
+  
+  .inspiration-show {display: block;}
