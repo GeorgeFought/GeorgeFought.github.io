@@ -1,6 +1,7 @@
 .parallax-one,
 .parallax-two,
-.parallax-three {
+.parallax-three,
+.parallax-four {
   height: 100vh;
   background-attachment: fixed;
   background-position: center center;
@@ -8,10 +9,14 @@
   background-size: cover;
 }
 
+.parallax-four {
+  background-image: url("/images/ComparEv.png");
+  border-radius: 5px;
+}
 .parallax-one {
   background-image: url("/images/desertIsland.png");
   border-radius: 5px;
-  position: relative;
+  /* position: relative; */
 }
 
 .parallax-two {
@@ -64,7 +69,8 @@ body {
 }
 
 .topic1,
-.topic2 {
+.topic2,
+.topic4 {
   height: 500px;
   /* background-image: url(/images/vaporwave-city-delorean.jpg); */
   font-size: 2rem;
@@ -157,3 +163,6 @@ h5 {
   color: black;
 }
 
+.footer2 {
+  color: black;
+}
